@@ -72,6 +72,24 @@ func main() {
 
 	fmt.Println("==============================")
 
-	// 如何删除元素
+	// 如何删除元素 比较麻烦 比如删除 mysql
+	courseSlice9 := []string{"go", "grpc", "mysql", "es", "gin"}
+	myslice := append(courseSlice9[:2], courseSlice9[3:]...)
+	fmt.Println(myslice)
 
+	courseSlice9 = courseSlice9[:3]
+	fmt.Println(courseSlice9)
+
+	fmt.Println("==============================")
+	courseSlice10 := []string{"go", "grpc", "mysql", "es", "gin"}
+	//复制slice
+	courseSliceCopy := courseSlice10
+	courseSliceCopy2 := courseSlice10[:]
+	fmt.Println(courseSliceCopy, courseSliceCopy2)
+	// 拷贝slice
+
+	// var courseSliceCopyNew []string  //错误定义 这种空间不回拷贝，错误用法
+	var courseSliceCopyNew = make([]string, len(courseSlice10))
+	copy(courseSliceCopyNew, courseSlice10)
+	fmt.Println(courseSliceCopyNew)
 }

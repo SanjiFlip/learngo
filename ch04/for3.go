@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	//for 循环还有一种用法 for range 主要对字符串、数组、切片、map、channel
+	//for 循环还有一种用法 for range 主要对字符串、数组、切片、mymap、channel
 	/*
 		for key,value := range {
 		}
@@ -22,7 +22,7 @@ func main() {
 		字符串 字符串的索引(key) 字符串对应的索引的字符值的拷贝(value)       如果不写key，返回的就是索引
 		数组	    数组的索引	    索引对应的值的拷贝	                    如果不写 key，那么返回的是索引
 		切片	    切片的索引	    索引对应的值的拷贝	                    如果不写 key，那么返回的是索引
-		map	    map 的 key	    value 返回的是 key 对应的值的拷贝	    如果不写 key，那么返回的是 map 的值
+		mymap	    mymap 的 key	    value 返回的是 key 对应的值的拷贝	    如果不写 key，那么返回的是 mymap 的值
 		channel		            value 返回的是 channel 接受的数据
 	*/
 	fmt.Println("-----------------------")

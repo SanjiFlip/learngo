@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	// go语言提供了那些几盒类型的数据结构，数组、切片(slice)、map、list
+	// go语言提供了那些几盒类型的数据结构，数组、切片(slice)、mymap、list
 	// 数组 定义 var name [count]int
 	var courses1 [3]string // courses类型 ，数组 只有三个元素的数组
 	var courses2 [4]string
